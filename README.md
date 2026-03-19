@@ -1,180 +1,106 @@
-# AccessNetIQ Tracker
+# AccessNetIQ — Issue Tracker
 
-This repository is used to track issues, bug reports, and feature requests for **AccessNetIQ** - a demonstration platform for ISP network management and automated customer service solutions.
+> **Found a bug or have a feature request?**
+> → [Open an Issue](https://github.com/MuseBj/AccessNetIQ-Tracker/issues/new) — it takes less than 2 minutes.
 
-## What is AccessNetIQ?
+---
 
-AccessNetIQ is a dual-interface platform that includes:
+## Quick Start
 
-- **Customer Management System (CMS):** A unified dashboard featuring omni-search (IP, MAC, Serial, Phone, Name, Address), real-time signal strength graphs, bandwidth utilization charts, and plain-English status indicators.
-- **AI-Powered Virtual IVR Simulator:** An ElevenLabs-powered voice system with context-aware routing that adapts messaging based on account status and system conditions.
+1. Go to the [**Issues tab**](https://github.com/MuseBj/AccessNetIQ-Tracker/issues)
+2. Click the green **New issue** button
+3. Choose a template: **Bug Report** or **Feature Request**
+4. Fill in the details and submit
 
-For more details about the product capabilities, see the [product overview](#product-overview) below.
+That's it. The core team triages submissions weekly and will follow up directly in your issue thread.
 
-## How to Submit Issues & Feature Requests
+---
 
-This project uses **GitHub Issues** as its issue tracking system. All bug reports, feature requests, and tasks are managed through the repository's Issues tab on GitHub.
+## Reporting a Bug
 
-### Accessing the Issues Page
+Use the **Bug Report** template and include the following:
 
-1. Go to the repository on GitHub: `https://github.com/sst/opencode`
-2. Click the **Issues** tab near the top of the page
-3. Click the **New issue** button (green button on the right side)
+**Issue Title** — Be specific. Not: *"Dashboard broken"*. Yes: *"Customer search returns no results when querying by IP address"*
 
-### Creating a New Issue
+**Steps to Reproduce** — Numbered, exact steps that lead to the bug. If we can't reproduce it, we can't fix it.
 
-When creating an issue, you'll see available issue templates. Select the appropriate template:
+**Expected vs. Actual Behavior** — What should have happened, and what actually happened.
 
-#### For Bug Reports
-Select the **Bug Report** template. You'll be asked to provide:
+**Screenshots or Screen Recording** — Visual evidence is the single most effective thing you can include. See [Attaching Screenshots](#attaching-screenshots) below.
 
-- [ ] **Issue Title:** A clear, concise description of the problem (e.g., "Login button not responding on dashboard page")
-- [ ] **Select a label:** Choose `bug` from the labels section on the right sidebar
-- [ ] **Steps to reproduce:** Numbered list of actions that led to the bug
-- [ ] **Expected behavior:** What should have happened
-- [ ] **Actual behavior:** What actually happened
-- [ ] **Screenshots:** Visual evidence of the issue (see screenshot instructions below)
-- [ ] **Environment:** Browser, OS, and any relevant system details
+**Environment** — Your browser, OS, and any relevant context (e.g., specific account type, scenario mode active).
 
-#### For Feature Requests
-Select the **Feature Request** template. You'll be asked to provide:
+---
 
-- [ ] **Issue Title:** A clear description of the proposed feature (e.g., "Add dark mode support to dashboard")
-- [ ] **Select a label:** Choose `enhancement` from the labels section on the right sidebar
-- [ ] **Problem it solves:** Why this feature would be valuable
-- [ ] **Proposed solution:** Your idea for how to implement it
-- [ ] **Use cases:** Specific scenarios where this would be useful
+## Requesting a Feature
 
-### How to Take and Attach Screenshots
+Use the **Feature Request** template and include:
 
-#### Taking a Screenshot on Windows
+**Issue Title** — A clear, one-line description of the proposed feature.
 
-1. **Quick Screenshot (Full Screen):**
-   - Press `Win + Shift + S` to open the snipping toolbar
-   - Your screen will dim and you can click and drag to select an area
-   - The screenshot is copied to your clipboard
+**Problem It Solves** — Why does this matter? What workflow or pain point does it address?
 
-2. **Using Snipping Tool (More Options):**
-   - Press `Win` and search for "Snipping Tool"
-   - Click **New** to start a fresh snip
-   - Choose from: Free-form, Rectangular, Window, or Full-screen
-   - Save or copy the image
+**Proposed Solution** — Your idea for how it could work. Rough is fine — we want your thinking, not a spec doc.
 
-3. **Screenshot Key (Full Screen Only):**
-   - Press `Print Screen` (or `PrtScn`) to capture the entire screen
-   - Image is saved to clipboard (paste into an image editor to save)
+---
 
-#### Attaching Screenshots to GitHub Issues
+## Attaching Screenshots
+
+Screenshots are worth a thousand words. Here's how to capture and attach them:
+
+### Windows
+
+| Method | Steps |
+|---|---|
+| **Select an area** (recommended) | `Win + Shift + S` → drag to select → auto-copied to clipboard |
+| **Snipping Tool** | Press `Win`, search "Snipping Tool" → click **New** |
+| **Full screen** | Press `Print Screen` (`PrtScn`) → auto-copied to clipboard |
+
+### Mac
+
+| Method | Steps |
+|---|---|
+| **Select an area** (recommended) | `Cmd + Shift + 4` → drag to select → auto-saved to Desktop |
+| **Full screen** | `Cmd + Shift + 3` → auto-saved to Desktop |
+| **Window only** | `Cmd + Shift + 4`, then press `Space` → click the window |
+
+### Attaching to Your GitHub Issue
 
 Once you have a screenshot:
 
-1. While creating or editing an issue on GitHub, click inside the issue description box
-2. **Drag and drop** the image file directly into the text area, OR
-3. Click the **Attach files** icon (paperclip) at the bottom of the text area
-4. Select your screenshot from the file picker
-5. The image will upload and embed automatically
+1. Click inside the issue text area on GitHub
+2. Press `Ctrl + V` (Windows) or `Cmd + V` (Mac) to paste directly from clipboard
+3. GitHub uploads the image automatically and inserts a markdown link
 
-**Tip:** You can also paste an image from your clipboard directly into the GitHub text area using `Ctrl + V`.
+You can also **drag and drop** a saved image file into the text box, or use the **paperclip icon** at the bottom of the editor.
 
-### Defining Issue Types
+---
 
-Use the **Labels** feature on GitHub to categorize your issue:
+## What Happens After You Submit
 
-| Issue Type | GitHub Label | When to Use |
-|------------|--------------|-------------|
-| **Bug** | `bug` | Something is broken, incorrect, or not working as expected |
-| **Enhancement/Feature** | `enhancement` | New functionality or improvement to existing features |
-| **Question** | `question` | You need clarification or have inquiries about the project |
-| **Task** | (use `enhancement` or create `task`) | Work items that aren't bugs or features (e.g., refactoring, cleanup) |
+- Issues are **triaged weekly** by the AccessNetIQ core team
+- You'll receive follow-up directly in your issue thread — check your GitHub notifications
+- Valid bugs are transferred to the private development repository and tracked internally
+- Feature requests are reviewed against the product roadmap and prioritized accordingly
 
-#### How to Add Labels
+You do **not** need a specific account type or special access to submit issues — anyone with a GitHub account can file here.
 
-1. On the right sidebar of the issue creation page, find the **Labels** section
-2. Click the gear icon or the label dropdown
-3. Select the appropriate label(s) for your issue
-4. You can select multiple labels if applicable
+---
 
-#### Setting Priority
+## About This Repository
 
-Add priority labels to indicate urgency:
+This is a **public-facing issue tracker only** — there is no source code here. This is intentional.
 
-| Priority | Label | Description |
-|----------|-------|-------------|
-| Critical | `priority-high` | System down, data loss, security issues |
-| Important | `priority-medium` | Significant impact on functionality |
-| Minor | `priority-low` | Cosmetic issues, nice-to-have improvements |
+AccessNetIQ uses a dual-repository architecture:
 
-### Best Practices for Good Issues
+| Repo | Purpose | Access |
+|---|---|---|
+| **This repo (Tracker)** | Issue collection and triage | Open |
+| **Private codebase** | Actual source code and development | Core team only |
 
-- **Search first:** Use the search bar on the Issues page to check if a similar issue already exists
-- **One issue per report:** Keep each issue focused on a single problem or feature
-- **Be specific:** Include version numbers, browser/OS details, and exact error messages
-- **Include reproduction steps:** For bugs, provide clear steps to reproduce the issue
-- **Use screenshots liberally:** Visual evidence greatly speeds up troubleshooting
-- **Stay responsive:** Answer follow-up questions on your issue to help resolve it faster
+When an issue is triaged and accepted, maintainers use GitHub's native **Transfer Issue** feature to move it into the private development repository. This keeps the feedback loop open without exposing proprietary code.
 
-### Issue Labels
+---
 
-We use the following labels to categorize issues:
-
-| Label | Description |
-|-------|-------------|
-| `bug` | Something isn't working as expected |
-| `enhancement` | New feature or feature improvement |
-| `question` | Further information is requested |
-| `priority-high` | Critical issue requiring immediate attention |
-| `priority-medium` | Important but not urgent |
-| `priority-low` | Minor issue or nice-to-have |
-| `documentation` | Related to docs or README updates |
-| `cms` | Related to the Customer Management System |
-| `ivr` | Related to the Virtual IVR Simulator |
-| `status-engine` | Related to the Status Engine or Scenario Toggle |
-| `good-first-issue` | Good for newcomers to tackle |
-
-## How to Contribute
-
-1. **Search First:** Check existing issues before creating a new one to avoid duplicates.
-2. **Use Issue Templates:** When creating a new issue, select the appropriate template (Bug Report or Feature Request).
-3. **Be Specific:** The more detail you provide, the faster we can address it.
-4. **Stay Engaged:** Respond to questions or follow-up requests promptly.
-
-## Product Overview
-
-### Core Capabilities
-
-#### 1. Unified Customer Management System (CMS)
-
-- **Omni-Search:** Complex lookup via IP Address, MAC, Serial Numbers, Phone, Name, Address
-- **Single Pane of Glass:** Integrates service details, Apogee API billing history, and SNMP device health metrics
-- **Visual Analytics:** Real-time signal strength graphs, bandwidth utilization charts, outage history timelines
-- **Plain-English Indicators:** Non-technical red/yellow/green status with troubleshooting suggestions
-
-#### 2. AI-Powered Virtual IVR Simulator
-
-- **ElevenLabs Voice Integration:** Natural, dynamic customer interactions
-- **Context-Aware Routing:** Dynamic messaging based on account status (billing, technical support, etc.)
-- **Status-Dependent Messaging:** Auto-adapted IVR greetings during outages with restoration estimates
-- **Web-Based Call Simulator:** Virtual phone interface with DTMF keypad and call flow visualization
-
-#### 3. Real-Time Status Engine & Visual Mapping
-
-- **Instant Scenario Toggling:** Simulate full or partial regional outages
-- **Geospatial Intelligence:** Mapping for perimeter visualization, device clusters, and issue radii
-
-### Target Audiences
-
-1. **ISP Sales & Pre-Sales Teams:** Demonstrate technical capabilities and customer service tools to prospective clients
-2. **ISPs & Telecomm Operators:** Adopt these technologies to manage networks, reduce support costs, and enhance customer experience
-
-## Repository Structure
-
-```
-AccessNetIQ-Tracker/
-├── README.md              # This file
-├── ISSUES/                # Issue tracking directory
-└── ...                    # Additional project files
-```
-
-## Questions?
-
-Feel free to open an issue with the `question` label, or reach out to the maintainers.
+*AccessNetIQ — ISP network management and AI-powered customer service tooling.*
+*Built by [Muse Umbrella LLC](https://github.com/MuseBj) under the Wiring the Future Networks brand.*
