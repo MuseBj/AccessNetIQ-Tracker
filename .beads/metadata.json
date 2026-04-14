@@ -1,4 +1,7 @@
 {
-  "database": "beads.db",
-  "jsonl_export": "issues.jsonl"
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_database": "AccessNetIQ_Tracker",
+  "project_id": "fa23dfc3-d795-48f8-8cd1-6972f48ebe7c"
 }
